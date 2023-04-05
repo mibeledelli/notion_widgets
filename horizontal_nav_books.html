@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 2px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> <img src="https://cdn-icons-png.flaticon.com/128/4237/4237611.png" data-src="https://cdn-icons-png.flaticon.com/128/4237/4237611.png" alt="Home " title="Home " width="20" height="20" class="lzy lazyload--done" srcset="https://cdn-icons-png.flaticon.com/128/4237/4237611.png 4x"> Home</a>
+            <a id="reading goals" onclick="navigate(this.id)" href="#"> <img src="https://cdn-icons-png.flaticon.com/128/3222/3222561.png" data-src="https://cdn-icons-png.flaticon.com/128/3222/3222561.png" alt="Target " title="Target " width="20" height="20" class="lzy lazyload--done" srcset="https://cdn-icons-png.flaticon.com/128/3222/3222561.png 4x"> Reading Goals</a>
+		<a id="reading tracker" onclick="navigate(this.id)" href="#"> <img src="https://cdn-icons-png.flaticon.com/128/3270/3270365.png" data-src="https://cdn-icons-png.flaticon.com/128/3270/3270365.png" alt="Search " title="Search " width="20" height="20" class="lzy lazyload--done" srcset="https://cdn-icons-png.flaticon.com/128/3270/3270365.png 4x"> Reading Tracker</a>
+            <a id="Book Club Management" onclick="navigate(this.id)" href="#"> <img src="https://cdn-icons-png.flaticon.com/128/751/751621.png" data-src="https://cdn-icons-png.flaticon.com/128/751/751621.png" alt="Coffee cup " title="Coffee cup " width="20" height="20" class="lzy lazyload--done" srcset="https://cdn-icons-png.flaticon.com/128/751/751621.png 4x"> Book Club Management</a>
+         <a id="Reading Challenges" onclick="navigate(this.id)" href="#"> <img src="https://cdn-icons-png.flaticon.com/128/3330/3330300.png" data-src="https://cdn-icons-png.flaticon.com/128/3330/3330300.png" alt="Book " title="Book " width="20" height="20" class="lzy lazyload--done" srcset="https://cdn-icons-png.flaticon.com/128/3330/3330300.png 4x"> Reading Challenges</a>
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/My-Personal-Library-f4ddcc62999d402e9fa2870d8549a2e9", '_blank').focus();
+                  else if (id == 'reading goals')
+				window.open("https://www.notion.so/Reading-Goals-5d995cdb33f6471a9cf36073bf043ba3?showMoveTo=true", '_blank').focus();
+			else if (id == 'reading tracker')
+				window.open("https://www.notion.so/Reading-tracker-35f7f6f1d6774bc680fa547216adbd23?pvs=4", '_blank').focus();
+			else if (id == 'Book Club Management')
+				window.open("https://www.notion.so/Book-Club-Management-c85d39177d214b2e9d95f02f40fdb6e0?pvs=4", '_blank').focus();
+			else if (id == 'Reading Challenges')
+				window.open("https://www.notion.so/Reading-challenges-0f02e15baf1a47af977d085165400b42", '_blank').focus();
+			
+
+		}
+	</script>
+
+
+</body>
+
+</html>
